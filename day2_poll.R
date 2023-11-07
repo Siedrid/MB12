@@ -89,6 +89,6 @@ ggplot(data = energy_prod, aes(x = ProductionTypeName)) +
 g <- ggplot(data = energy_prod, aes(x = InstalledGenCapacity, y=ActualGenerationOutput))
 g + geom_point()
 
-
+# does this work?
 
 
