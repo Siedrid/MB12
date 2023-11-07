@@ -1,6 +1,10 @@
+<<<<<<< HEAD
 # Reading Line by Line -----
 'lecture from 31.10.'
 
+=======
+# Reading Line by Line
+>>>>>>> fc571a2981fd9d7c7c3badfc5df2da31f6c4b63c
 poll <- readLines("poll.md")
 str(poll)
 poll[1]
@@ -19,6 +23,10 @@ df$os <- gsub("[*]", "", df$os)
 df$os <- trimws(df$os)
 
 df$lang <- gsub("[*]", "", df$lang)
+<<<<<<< HEAD
+=======
+sep()
+>>>>>>> fc571a2981fd9d7c7c3badfc5df2da31f6c4b63c
 
 as.numeric(df$exp)
 df$exp[df$exp == "0-5"] <- 2.5
@@ -29,14 +37,19 @@ df$lang <- gsub("[*]", "", df$lang)
 df$lang <- tolower(df$lang)
 
 # Task 1: how can we make a vector from df$lang that contains each language mentioned as a single element
+<<<<<<< HEAD
 df$lang
 lang <- gsub(" ","", unlist(strsplit(df$lang, ", ")))
 lang_count <- table(lang)
 names(lang_count)
+=======
+
+>>>>>>> fc571a2981fd9d7c7c3badfc5df2da31f6c4b63c
 
 # Task 2:
 # wordcloud
 
+<<<<<<< HEAD
 install.packages("wordcloud")
 library(wordcloud)
 wordcloud::wordcloud(words = names(lang_count), freq = lang_count, min.freq = 1)
